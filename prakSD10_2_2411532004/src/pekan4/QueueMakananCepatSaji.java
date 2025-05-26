@@ -1,8 +1,6 @@
 package pekan4;
 
-import java.util.Queue;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 class Pelanggan {
     String id;
