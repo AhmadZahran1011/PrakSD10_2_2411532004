@@ -1,7 +1,6 @@
 package pekan6;
 
 public class HapusDLL {
-
     // fungsi menghapus node awal
     public static NodeDLL delHead(NodeDLL head) {
         if (head == null) {
@@ -37,29 +36,22 @@ public static NodeDLL delPos(NodeDLL head, int pos) {
  // jika DLL kosong
  if (head == null)
      return head;
-
  NodeDLL curr = head;
-
  // telusuri sampai ke node yang akan dihapus
  for (int i = 1; curr != null && i < pos; i++) {
      curr = curr.next;
  }
-
  // jika posisi tidak ditemukan
  if (curr == null)
      return head;
-
  // update pointer
  if (curr.prev != null)
      curr.prev.next = curr.next;
-
  if (curr.next != null)
      curr.next.prev = curr.prev;
-
  // jika yang dihapus head
  if (head == curr)
      head = curr.next;
-
  return head;
 }
 //fungsi mencetak DLL
@@ -71,7 +63,6 @@ public static void printList(NodeDLL head) {
  }
  System.out.println();
 }
-
 public static void main(String[] args) {
 	System.out.println("AhmadZahran");
 	System.out.println("2411532004");
@@ -95,11 +86,9 @@ public static void main(String[] args) {
     System.out.print("Setelah head dihapus: ");
     head = delHead(head);
     printList(head);
-
     System.out.print("Setelah node terakhir dihapus: ");
     head = delLast(head);
     printList(head);
-
     System.out.print("Menghapus node ke-2: ");
     head = delPos(head, 2);
     printList(head);
