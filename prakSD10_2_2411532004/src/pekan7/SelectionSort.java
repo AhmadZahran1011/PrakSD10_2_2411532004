@@ -17,10 +17,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.border.EmptyBorder;
 
 public class SelectionSort extends JFrame {
-
+//Ahmad Zahran:)
 
 	private static final long serialVersionUID = 1L;
 	private int[] array;
@@ -55,7 +54,7 @@ public class SelectionSort extends JFrame {
 	 * Create the frame.
 	 */
 	public SelectionSort() {
-		setTitle("Insertion Sort Langkah per Langkah");
+		setTitle("Selection Sort Langkah per Langkah");
 		setSize(750, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
@@ -95,13 +94,10 @@ public class SelectionSort extends JFrame {
 		
 		// Event Set Array
 		setButton.addActionListener(e -> setArrayFromInput());
-		
 		// Event Langkah Selanjutnya
 		stepButton.addActionListener(e -> performStep());
-		
 		// Event Reset
-		resetButton.addActionListener(e -> reset());
-		
+		resetButton.addActionListener(e -> reset());	
 		
 	}
 	
