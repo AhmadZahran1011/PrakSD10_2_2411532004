@@ -153,7 +153,6 @@ public class BubbleSort extends JFrame {
 	        j = 0;
 	        i++;
 	    }
-
 	    stepCount++;
 	    if (i >= array.length - 1) {
 	        sorting = false;

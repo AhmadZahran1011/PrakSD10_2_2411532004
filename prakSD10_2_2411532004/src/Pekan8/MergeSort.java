@@ -7,7 +7,7 @@ import java.util.Queue;
 import javax.swing.*;
 
 public class MergeSort extends JFrame {
-
+//Ahmad Zahran :)
 	private static final long serialVersionUID = 1L;
 	private int[] array;
 	private JLabel[] labelArray;
@@ -84,7 +84,6 @@ public class MergeSort extends JFrame {
 
 	private void performStep() {
 		resetHighlights();
-
 		if (!isMerging && !mergeQueue.isEmpty()) {
 			int[] range = mergeQueue.poll();
 			left = range[0];
@@ -125,7 +124,6 @@ public class MergeSort extends JFrame {
 				stepArea.append("  -> Temp: " + Arrays.toString(Arrays.copyOf(temp, k)) + "\n\n");
 				return;
 			}
-
 			if (j <= right) {
 				logStep("Salin sisa dari kanan: " + array[j]);
 				temp[k++] = array[j++];

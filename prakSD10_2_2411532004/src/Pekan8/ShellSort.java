@@ -23,6 +23,7 @@ public class ShellSort extends JFrame {
 	 * Create the frame.
 	 */
 	public ShellSort() {
+		//Ahmad Zahran sudah lelah :(		
 		setTitle("Shell Sort Langkah per Langkah");
 		setSize(750, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
