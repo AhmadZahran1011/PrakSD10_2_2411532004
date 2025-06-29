@@ -83,10 +83,8 @@ public class InsertionSortGUI extends JFrame {
     private void setArrayFromInput() {
         String text = inputField.getText().trim();
         if (text.isEmpty()) return;
-
         String[] parts = text.split(",");
         array = new int[parts.length];
-
         try {
             for (int k = 0; k < parts.length; k++) {
                 array[k] = Integer.parseInt(parts[k].trim());
